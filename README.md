@@ -1,7 +1,6 @@
 # CalcASM — Calculadora em Assembly x86-64
 
-# site:
-     https://lamarq7eyt.github.io/CalcASM/
+# Calculadora: https://lamarq7eyt.github.io/CalcASM/
 
 Calculadora funcional escrita em **Assembly x86-64 (NASM)** para Linux, com um **visualizador interativo** que mostra a execução das instruções em tempo real diretamente no navegador.
 
