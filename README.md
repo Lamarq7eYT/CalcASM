@@ -64,3 +64,8 @@ Resultado : 294
 | 0 | `read` | Lê entrada do stdin |
 | 1 | `write` | Escreve no stdout |
 | 60 | `exit` | Encerra o processo |
+
+
+Feito por Llew
+
+Não me rouba pfvr!!!
