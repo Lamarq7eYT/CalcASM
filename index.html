@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Assembly x86-64</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1>⬡ CALCULADORA / ASSEMBLY x86-64</h1>
+  <div class="sub">NASM · LINUX SYSCALLS · VISUALIZADOR DE EXECUÇÃO</div>
+
+  <div class="grid">
+
+    <!-- ESQUERDA -->
+    <div>
+      <div class="panel">
+        <div class="pt">▸ ENTRADA</div>
+        <div class="cb">
+          <div class="row">
+            <input type="number" id="na" value="42"/>
+            <select id="op">
+              <option>+</option>
+              <option>-</option>
+              <option>*</option>
+              <option>/</option>
+            </select>
+            <input type="number" id="nb" value="7"/>
+            <span class="eq">=</span>
+            <div class="res" id="rb">?</div>
+          </div>
+          <button class="btn" id="btn">▶ EXECUTAR / CALCULAR</button>
+          <div class="err" id="em"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="pt">▸ TRACE DE EXECUÇÃO</div>
+        <div class="tlog" id="tl"></div>
+      </div>
+
+      <div class="panel">
+        <div class="pt">▸ CÓDIGO ASSEMBLY (NASM x86-64)</div>
+        <div class="cw" id="cv"></div>
+      </div>
+    </div>
+
+    <!-- DIREITA -->
+    <div>
+      <div class="panel">
+        <div class="pt">▸ REGISTRADORES</div>
+        <div class="rg" id="rg"></div>
+        <div class="fr" id="fr"></div>
+      </div>
+
+      <div class="panel">
+        <div class="pt">▸ PILHA (STACK)</div>
+        <div class="sw" id="sw"></div>
+      </div>
+
+      <div class="panel">
+        <div class="pt">▸ SYSCALLS USADAS</div>
+        <div class="info">
+          <span class="amb">0</span> — read (stdin)<br/>
+          <span class="amb">1</span> — write (stdout)<br/>
+          <span class="amb">60</span> — exit<br/><br/>
+          <span class="grn">CONVENÇÃO</span><br/>
+          System V AMD64 ABI<br/>
+          Args: RDI RSI RDX<br/>
+          Retorno: RAX
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
